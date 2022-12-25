@@ -11,9 +11,9 @@ const App = () => {
   return (
     <>
       <Navbar></Navbar>
-      <Route path="/">
+      {/* <Route path="/">
         <Home />
-      </Route>
+      </Route> */}
     </>
   );
 };

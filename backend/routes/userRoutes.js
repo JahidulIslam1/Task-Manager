@@ -13,8 +13,8 @@ const { protect } = require('../midleware/auth');
 
 router.route('/register').post(registerUser);
 router.route('/login').get(loginUser);
-router.route('/:id').get(protect, getUser);
-router.route('/alluser').get(protect, getAllUser);
+router.route('/:id').get(getUser);
+router.route('/alluser').get(getAllUser);
 // router.route('/givetask').post(giveTask);
 
 module.exports = router;
